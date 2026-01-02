@@ -40,50 +40,64 @@ const Layout = () => {
     useEffect(() => {
         setIsLoading(true);
 
-        const handleImagesLoaded = () => {
-             // Add a small buffer time for smoothness
+        const startTime = Date.now();
+        const MIN_DISPLAY_TIME = 2600; // Matches preloader animation duration + buffer
+
+        // Function to hide loader after ensuring min time
+        const finishLoading = () => {
+             const elapsedTime = Date.now() - startTime;
+             const remainingTime = Math.max(0, MIN_DISPLAY_TIME - elapsedTime);
+             
              setTimeout(() => {
                  setIsLoading(false);
-             }, 800);
+             }, remainingTime);
         };
 
-        const images = Array.from(document.images);
-        
-        if (images.length === 0) {
-            handleImagesLoaded();
+        // Select CRITICAL images (those without loading="lazy")
+        // We only block the view for these. Off-screen lazy images can load in background.
+        const allImages = Array.from(document.images);
+        const criticalImages = allImages.filter(img => img.getAttribute('loading') !== 'lazy');
+
+        if (criticalImages.length === 0) {
+            finishLoading();
             return;
         }
 
-        let loadedImages = 0;
-        const totalImages = images.length;
+        let loadedCount = 0;
+        const totalCritical = criticalImages.length;
+        let isMounted = true;
 
-        const onImageLoad = () => {
-            loadedImages++;
-            if (loadedImages === totalImages) {
-                handleImagesLoaded();
+        const checkCompletion = () => {
+            if (loadedCount >= totalCritical && isMounted) {
+                finishLoading();
             }
         };
 
-        let hasPendingImages = false;
-        images.forEach(img => {
+        const onImageEvent = () => {
+            loadedCount++;
+            checkCompletion();
+        };
+
+        let pendingImages = false;
+        criticalImages.forEach(img => {
             if (img.complete) {
-                onImageLoad();
+                onImageEvent();
             } else {
-                hasPendingImages = true;
-                img.addEventListener('load', onImageLoad);
-                img.addEventListener('error', onImageLoad); // Handle errors gracefully
+                pendingImages = true;
+                img.addEventListener('load', onImageEvent);
+                img.addEventListener('error', onImageEvent);
             }
         });
 
-        if (!hasPendingImages) {
-             handleImagesLoaded();
+        if (!pendingImages) {
+             checkCompletion();
         }
 
-        // Cleanup
         return () => {
-             images.forEach(img => {
-                img.removeEventListener('load', onImageLoad);
-                img.removeEventListener('error', onImageLoad);
+             isMounted = false;
+             criticalImages.forEach(img => {
+                img.removeEventListener('load', onImageEvent);
+                img.removeEventListener('error', onImageEvent);
              });
         };
     }, [location.pathname]);

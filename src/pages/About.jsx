@@ -32,7 +32,7 @@ const About = () => {
                     <FadeIn direction="right">
                         <div className="aspect-[3/4] bg-neutral-100">
                              <img 
-                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=60&w=800" 
+                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=50&w=800" 
                                 alt="Founder" 
                                 className="w-full h-full object-cover grayscale"
                             />
