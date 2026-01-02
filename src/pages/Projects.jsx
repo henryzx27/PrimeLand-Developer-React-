@@ -13,7 +13,7 @@ export const projects = [
         description: "A premium gated community spread across 15 acres with 200+ villas and plots. Perfectly connected to the city via the new outer ring road.",
         price: "28L",
         size: "800-2400",
-        image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=60&w=800",
         status: "Ready",
         featured: true
     },
@@ -25,7 +25,7 @@ export const projects = [
         description: "Experience the serenity of nature without leaving the city. Urban Nest offers DTCP approved plots with 40ft wide black top roads.",
         price: "35L",
         size: "1000-1800",
-        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=60&w=800",
         status: "New",
         featured: false
     },
@@ -37,7 +37,7 @@ export const projects = [
         description: "An affordable investment opportunity in one of Chennai's fastest growing suburbs. Ideal for first-time investors.",
         price: "18L",
         size: "600-1500",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=60&w=800",
         status: "Selling Fast",
         featured: false
     },
@@ -49,7 +49,7 @@ export const projects = [
         description: "Luxury villa plots right next to the IT corridor. High appreciation potential and ready for immediate construction.",
         price: "22L",
         size: "1200-2400",
-        image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=60&w=800",
         status: "Final Few",
         featured: true
     }

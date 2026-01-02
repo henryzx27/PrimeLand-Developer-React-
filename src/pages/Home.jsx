@@ -59,7 +59,7 @@ const Home = () => {
                             <div className="relative w-full h-full overflow-hidden">
                                 <motion.img 
                                     style={{ scale: imageScale }}
-                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop" 
+                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=60&w=1200&auto=format&fit=crop" 
                                     alt="Modern Architecture" 
                                     className="w-full h-full object-cover object-center"
                                 />
@@ -98,7 +98,7 @@ const Home = () => {
                             <motion.img 
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.7 }}
-                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80" 
+                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=60&w=800" 
                                 alt="Founder with client" 
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
                             />
@@ -162,7 +162,7 @@ const Home = () => {
                             <Link to="/projects/green-valley-nagar" className="block">
                                 <div className="aspect-[4/3] overflow-hidden mb-8 relative">
                                     <img 
-                                        src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80"
+                                        src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=60&w=800"
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
                                         alt="Green Valley Nagar"
                                     />
@@ -183,7 +183,7 @@ const Home = () => {
                             <Link to="/projects/urban-nest" className="block">
                                 <div className="aspect-[4/3] overflow-hidden mb-8 relative">
                                     <img 
-                                        src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80" 
+                                        src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=60&w=800" 
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
                                         alt="Urban Nest"
                                     />

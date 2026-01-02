@@ -11,10 +11,10 @@ const projectsData = {
         price: "28 Lakhs Onwards",
         desc: "Green Valley Nagar is a premium plotted development designed for those who appreciate the finer things in life. Spread across 15 acres, this project offers a perfect blend of urban connectivity and natural tranquility.",
         amenities: ["Black Top Roads", "Street Lights", "Gated Community", "24/7 Security", "Avenue Trees", "Potable Water"],
-        image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=60&w=1200",
         gallery: [
-            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=60&w=800",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=60&w=800"
         ]
     },
     "urban-nest": {
@@ -23,10 +23,10 @@ const projectsData = {
         price: "35 Lakhs Onwards",
         desc: "Experience the serenity of nature without leaving the city. Urban Nest offers DTCP approved plots with 40ft wide black top roads, ensuring a spacious and premium living environment for you and your family.",
         amenities: ["Grand Entrance Arch", "Kids Play Area", "Clubhouse", "Underground Drainage", "CCTV Surveillance"],
-        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=60&w=1200",
         gallery: [
-            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80"
+            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=60&w=800&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=60&w=800"
         ]
     },
     "prime-city": {
@@ -35,10 +35,10 @@ const projectsData = {
         price: "18 Lakhs Onwards",
         desc: "An affordable investment opportunity in one of Chennai's fastest growing suburbs. Prime City is strategized for high appreciation, making it the ideal choice for first-time investors looking to build wealth.",
         amenities: ["Clear Title", "EB Connection", "Good Ground Water", "Ready to Construct", "Near Railway Station"],
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=60&w=1200",
         gallery: [
-            "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80",
-            "https://images.unsplash.com/photo-1600596542815-3ad19fb2a258?q=80&w=2074&auto=format&fit=crop"
+            "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=60&w=800",
+            "https://images.unsplash.com/photo-1600596542815-3ad19fb2a258?q=60&w=800&auto=format&fit=crop"
         ]
     },
     "sai-enclave": {
@@ -47,10 +47,10 @@ const projectsData = {
         price: "22 Lakhs Onwards",
         desc: "Luxury villa plots right next to the IT corridor. With the proposed metro extension and new bus terminus nearby, Sri Sai Enclave offers unmatched connectivity and appreciation potential.",
         amenities: ["Park & Jogging Track", "Plots Vastu Compliant", "Sweet Ground Water", "30ft & 24ft Roads", "Nearby Schools"],
-        image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80",
+        image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=60&w=1200",
         gallery: [
-             "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-             "https://images.unsplash.com/photo-1622396636133-2709d812c1e8?q=80&w=1587&auto=format&fit=crop"
+             "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=60&w=800&auto=format&fit=crop",
+             "https://images.unsplash.com/photo-1622396636133-2709d812c1e8?q=60&w=800&auto=format&fit=crop"
         ]
     }
 };
