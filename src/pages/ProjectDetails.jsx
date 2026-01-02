@@ -157,7 +157,7 @@ const ProjectDetails = () => {
                                 
                                 <a 
                                     href="https://wa.me/919999999999" 
-                                    className="block w-full text-center bg-cta text-white py-4 font-bold uppercase tracking-widest text-xs hover:bg-green-600 transition-colors shadow-lg"
+                                    className="block w-full text-center bg-cta text-white py-5 font-bold uppercase tracking-widest text-xs hover:bg-green-600 transition-colors shadow-lg"
                                 >
                                     WhatsApp Brochure
                                 </a>

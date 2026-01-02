@@ -26,22 +26,29 @@ const Home = () => {
                                 <span className="italic font-light text-neutral-400">Timeless</span> <br />
                                 Legacies.
                             </h1>
-                            <p className="relative top-[-8px] max-w-md text-lg text-neutral-600 font-light mb-12 leading-relaxed">
+                            <p className="relative top-[-8px] max-w-md text-lg text-neutral-600 font-light mb-8 leading-relaxed">
                                 PrimeLand Developers redefines the landscape of Chennai with DTCP Approved plots and premium villas. 
                                 We curate lifestyles rooted in trust, transparency, and value.
                             </p>
+
+                            {/* Credibility Line - Added */}
+                            <p className="relative top-[-16px] text-[10px] md:text-xs font-medium text-neutral-500 tracking-wider uppercase mb-12 flex items-center gap-2 flex-wrap">
+                                <span className="bg-accent/10 text-accent-dark px-2 py-1 rounded">DTCP-approved plots</span> • 
+                                <span>Clear documentation</span> • 
+                                <span>End-to-end support</span>
+                            </p>
                             
-                            <div className="flex flex-wrap gap-6">
+                            <div className="flex flex-wrap gap-4 md:gap-6">
                                 <Link 
                                     to="/projects" 
-                                    className="relative top-[-24px] bg-primary text-secondary px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-accent hover:-translate-y-0.5 transition-transform transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center gap-3 group"
+                                    className="relative top-[-24px] bg-primary text-secondary px-8 py-5 text-xs font-bold tracking-widest uppercase hover:bg-accent hover:-translate-y-0.5 transition-transform transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center justify-center gap-3 group w-full md:w-auto"
                                 >
                                     View Projects
                                     <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                                 </Link>
                                 <a 
                                     href="https://wa.me/919999999999" 
-                                    className="relative top-[-24px] border border-primary text-primary px-8 py-4 text-xs font-bold tracking-widest uppercase hover:bg-primary hover:text-white hover:-translate-y-0.5 transition-transform transition-all duration-300 flex items-center gap-3"
+                                    className="relative top-[-24px] border border-primary text-primary px-8 py-5 text-xs font-bold tracking-widest uppercase hover:bg-primary hover:text-white hover:-translate-y-0.5 transition-transform transition-all duration-300 flex items-center justify-center gap-3 w-full md:w-auto"
                                 >
                                     <MessageCircle size={16} />
                                     WhatsApp Us

@@ -77,9 +77,12 @@ const Footer = () => {
                     </div>
                 </div> */}
                 <div className="pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 font-light tracking-wide">
-                <p>
-                    &copy; {new Date().getFullYear()} PrimeLand Developers. All rights reserved.
-                </p>
+                <div className="flex flex-col gap-2">
+                    <p>
+                        &copy; {new Date().getFullYear()} PrimeLand Developers. All rights reserved.
+                    </p>
+                    <p className="text-neutral-600 italic opacity-60">This is a demo project for presentation purposes.</p>
+                </div>
 
                 <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mt-4 md:mt-0">
                     <div className="flex gap-8">
